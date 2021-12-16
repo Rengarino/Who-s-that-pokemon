@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="column">
+    <div class="whosThatPokemon">
+      <img class="maskedPokemon" src={{maskedPokemon}}/>
+    </div>
+    <div>
+      <button mat-stroked-button (click)="getRandomPokemon()">Random</button>
+      <button mat-stroked-button (click)="getTop3Pokemon()">Guess</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="topPokemon">
+      <div *ngIf="isShown">
+        <img class="secondPokemon"  src={{secondPokemonImage}}/>
+        <img class="firstPokemon"  src={{firstPokemonImage}}/>  
+        <img class="thirdPokemon"  src={{thirdPokemonImage}}/>
+        <p class="secondPokemonDistance">{{secondPokemon.distance}}</p>
+        <p class="firstPokemonDistance">{{firstPokemon.distance}}</p>
+        <p class="thirdPokemonDistance">{{thirdPokemon.distance}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

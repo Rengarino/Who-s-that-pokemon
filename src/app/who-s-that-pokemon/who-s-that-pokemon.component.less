@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+  }
+
+.whosThatPokemon {
+    background-image: url("../../assets/background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 710px;
+}
+
+.topPokemon {
+    background-image: url("../../assets/podium.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 710px;
+    margin-left: 400px;
+}
+
+.maskedPokemon {
+    width: 175px;
+    margin-top: 125px;
+    margin-left: 125px;
+}
+
+.firstPokemon {
+    width: 175px;
+    margin-top: 100px;
+}
+
+.secondPokemon {
+    width: 175px;
+    margin-left: 50px;
+}
+
+.thirdPokemon {
+    width: 175px;
+}
+
+p {
+    display: inline-block;
+}
+
+.firstPokemonDistance {
+    margin-left: 100px;
+}
+
+.secondPokemonDistance {   
+    margin-top: 35px;
+    margin-left: 75px;
+}
+
+.thirdPokemonDistance {
+    margin-left: 102px;
+}
+
+button {
+    background-color: rgba(255, 82, 29, 0.788);
+    margin-left: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 710px) {
+    .column { 
+        width: 100%;
+    }
+}
